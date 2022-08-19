@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../esm/index.js"],
+  "sourcesContent": ["import process from 'node:process';\nimport path from 'node:path';\n\nexport default function isPathCwd(path_) {\n\tlet cwd = process.cwd();\n\n\tpath_ = path.resolve(path_);\n\n\tif (process.platform === 'win32') {\n\t\tcwd = cwd.toLowerCase();\n\t\tpath_ = path_.toLowerCase();\n\t}\n\n\treturn path_ === cwd;\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,0BAAoB;AACpB,uBAAiB;AAEF,SAAR,UAA2B,OAAO;AACxC,MAAI,MAAM,oBAAAA,QAAQ,IAAI;AAEtB,UAAQ,iBAAAC,QAAK,QAAQ,KAAK;AAE1B,MAAI,oBAAAD,QAAQ,aAAa,SAAS;AACjC,UAAM,IAAI,YAAY;AACtB,YAAQ,MAAM,YAAY;AAAA,EAC3B;AAEA,SAAO,UAAU;AAClB;",
+  "names": ["process", "path"]
+}

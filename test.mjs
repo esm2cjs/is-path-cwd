@@ -1,6 +1,6 @@
 import process from 'node:process';
 import test from 'ava';
-import isPathCwd from './index.js';
+import isPathCwd from './esm/index.js';
 
 const processCwd = process.cwd;
 const cwd = process.cwd();
